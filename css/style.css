@@ -1,0 +1,400 @@
+html {
+    font-family: "Hina Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+/* ヘッダー */
+header {
+  padding: 27px  0;
+}
+
+.logo img {
+  width: 250px;
+  height: 80px;
+  display: block;
+  object-fit: cover;
+}
+
+.header_menu li {
+  margin-left: 40px;
+}
+
+.header_menu li a:hover{
+  color: #adb2ae;
+  transition: .3s;
+}
+
+.header_menu li a:hover{
+  transition: .3s;
+}
+
+/* スマホ対応 */
+@media only screen and (max-width: 768px) {
+  header .container {
+    justify-content: center;
+  }
+
+  .header_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    white-space: nowrap;
+  }
+
+  .header_menu li {
+    margin: 0;
+  }
+
+  .header_menu li a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+
+/* メイン */
+#hero {
+  background-image: url(../images/hero.jpg);
+  background-position : center;
+  background-size: cover;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+#hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #adb2ae;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: 1;
+}
+.hero_inner {
+  z-index: 2;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho:wght@200..900&display=swap');
+
+.hero_inner p {
+  /* font-family: "Hina Mincho", serif; */
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.hero_inner h1 {
+  /* font-family: "Hina Mincho", serif; */
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+
+/* product */
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card hr {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background: black;
+  margin: 8px 0;
+}
+
+.display {
+  background-color: gray;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* company */
+.company {
+  text-align: center;
+}
+
+.company_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.company_info {
+  width: 45%;
+  text-align: left;
+}
+
+.company_info dt {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.company_info dd {
+  margin-bottom: 20px;
+}
+
+.company_map {
+  width: 50%;
+  height: 300px;
+}
+
+/* スマホ対応 */
+@media only screen and (max-width: 768px) {
+  .company_wrapper {
+    flex-direction: column;
+  }
+
+  .company_info, .company_map {
+    width: 100%;
+  }
+
+  .company_map {
+    height: 250px;
+  }
+}
+
+
+/* お問い合わせ */
+.contact {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contact_info dt {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.contact_info dd {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+/* スマホ対応 */
+@media only screen and (max-width: 768px) {
+  .contact_info {
+    width: 100%;
+  }
+}
+
+
+/* フッター */
+footer {
+  text-align: center;
+  margin: 90px 0;
+  font-size: 24px;
+}
+.copylight {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+
+/* 取り扱い商品ページ */
+/* サボテン・多肉植物 */
+/* メイン */
+#cactus_hero {
+  background-image: url(../images/cacutas_hero.jpg);
+  background-position : center;
+  background-size: cover;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+#cacutus_hero::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.introduction {
+  width: 90%; 
+  max-width: 1120px; 
+  margin: 0 auto; 
+  /* text-align: center;  */
+  padding: 20px 0;
+}
+
+.intro_text {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+
+.intro_images {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.intro_images img {
+  width: 32%; 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* スマホ対応 */
+@media only screen and (max-width: 768px) {
+  .intro_images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro_images img {
+    width: 80%; 
+    height: auto; 
+  }
+}
+
+
+/* 観葉植物 */
+/* メイン */
+#plant_hero {
+  background-image: url(../images/plant_hero.jpg);
+  background-position : center;
+  background-size: cover;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+#plant_hero::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* サービス内容ページ */
+/* 植え替え */
+/* メイン */
+#replanting_hero {
+  background-image: url(../images/replanting_hero.jpg);
+  background-position : center;
+  background-size: cover;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+#replanting_hero::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* インテリア相談 */
+/* メイン */
+#interior_hero {
+  background-image: url(../images/interior_hero.jpg);
+  background-position : center;
+  background-size: cover;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+#interio_hero::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
