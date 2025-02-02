@@ -279,13 +279,6 @@ footer {
   margin-bottom: 90px;
   overflow: hidden;
 }
-#cacutus_hero::before {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .introduction {
   width: 90%; 
@@ -350,13 +343,7 @@ footer {
   margin-bottom: 90px;
   overflow: hidden;
 }
-#plant_hero::before {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 /* サービス内容ページ */
 /* 植え替え */
@@ -371,13 +358,7 @@ footer {
   margin-bottom: 90px;
   overflow: hidden;
 }
-#replanting_hero::before {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 /* インテリア相談 */
 /* メイン */
@@ -390,11 +371,4 @@ footer {
   align-items: center;
   margin-bottom: 90px;
   overflow: hidden;
-}
-#interio_hero::before {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
